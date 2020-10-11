@@ -1,0 +1,21 @@
+---
+layout: global.njk
+tags: process
+---
+
+<div id="container">
+
+  <h1>{{ title }}</h1>
+
+  {%- set nextPost = collections.process | getNextCollectionItem(page) -%}
+  {%- if nextPost and nextPost.data.active -%}
+  <article class="next-post">
+    <p>Next post</p>
+    <h2>
+      <a href="{{nextPost.url}}" class="next-post--link">
+        {{ nextPost.data.title }}
+      </a>
+    </h2>
+  </article>
+  {%- endif -%}
+</div>
