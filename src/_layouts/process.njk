@@ -1,21 +1,61 @@
 ---
 layout: global.njk
 tags: process
+date: 2020-10-12
 ---
 
 <div id="container">
+  <header>
+    <div class="content-width">
+      <a href="/" class="contents-link">Back</a>
+      <h1>{{ title }}</h1>
+      <p class="process-meta">
+        {{ page.date | formatDate }} · {{ content | striptags | wordcount | mins }}
+      </p>
+    </div>
+  </header>
 
-  <h1>{{ title }}</h1>
+  <div class="content-width">
 
-  {%- set nextPost = collections.process | getNextCollectionItem(page) -%}
-  {%- if nextPost and nextPost.data.active -%}
-  <article class="next-post">
-    <p>Next post</p>
-    <h2>
-      <a href="{{nextPost.url}}" class="next-post--link">
-        {{ nextPost.data.title }}
+    <div class="page-content">
+      {{ content | safe }}
+    </div>
+
+    <hr class="page-content--after">
+
+    {%- set previousPost = collections.process | getPreviousCollectionItem(page) -%}
+    {%- set nextPost = collections.process | getNextCollectionItem(page) -%}
+    {%- if previousPost and previousPost.data.active -%}
+      {%- set hasPrevious = true -%}
+    {%- endif -%}
+    {%- if nextPost and nextPost.data.active -%}
+      {%- set hasNext = true -%}
+    {%- endif -%}
+
+    {%- if hasNext or hasPrevious -%}
+    <div class="related-post--group">
+      {%- if hasPrevious -%}
+      <a href="{{previousPost.url}}" class="related-post--link">
+        <article class="related-post">
+          <p>Previous</p>
+          <h2>
+              {{ previousPost.data.title }}
+          </h2>
+        </article>
       </a>
-    </h2>
-  </article>
-  {%- endif -%}
+      {%- endif -%}
+
+      {%- if hasNext -%}
+      <a href="{{nextPost.url}}" class="related-post--link">
+        <article class="related-post">
+          <p>Next</p>
+          <h2>
+              {{ nextPost.data.title }}
+          </h2>
+        </article>
+      </a>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+  </div>
 </div>

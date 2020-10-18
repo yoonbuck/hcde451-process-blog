@@ -28,7 +28,7 @@ $font-stack: "Inter", "Roboto", sans-serif;
 // === COLORS ===
 
 $primary-accent-dark: #0d5ba3;
-$primary-accent-light: #51a2ec;
+$primary-accent-light: #5daaf1;
 
 $neutral-00: #ffffff;
 $neutral-10: #ededed;
@@ -120,6 +120,28 @@ header {
       }
     }
   }
+  .contents-link {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin: 0 0 1rem 0;
+    &:hover {
+      text-decoration: underline;
+      &::before {
+        content: "«";
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(-150%);
+      }
+    }
+  }
+  .process-meta {
+    font-size: 1rem;
+  }
 }
 
 .contents {
@@ -167,6 +189,7 @@ header {
       border: $bubble-border solid getvar(background);
       font-size: rem(22);
       font-weight: 600;
+      transition: transform 0.25s ease;
     }
     h2 {
       $font-size: rem(28);
@@ -174,6 +197,7 @@ header {
       font-size: $font-size;
       $margin-v: calc(#{$bubble-radius} - #{$font-size / 2});
       margin: $margin-v 0 $margin-v 2rem;
+      transition: transform 0.25s ease;
     }
   }
 
@@ -184,5 +208,64 @@ header {
     article i {
       background-color: getvar(primary-accent);
     }
+    &:hover {
+      h2 {
+        transform: translateX(0.25rem);
+      }
+      i {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.related-post {
+  background-color: getvar(background-offset);
+  padding: 2rem;
+  flex-grow: 1;
+  flex-basis: 16rem;
+  box-shadow: 0 0 0 0 getvar(primary-accent) inset;
+  transition: box-shadow 0.25s ease;
+
+  p {
+    margin: 0 0 1rem 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: getvar(text-secondary);
+  }
+  h2 {
+    margin: 0;
+    transition: color 0.25s ease;
+  }
+
+  &--link {
+    color: inherit;
+    text-decoration: none;
+    display: contents;
+  }
+  &--group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  &--link:hover & {
+    box-shadow: 0 8px 0 0 getvar(primary-accent) inset;
+    h2 {
+      color: getvar(primary-accent);
+    }
+  }
+}
+
+.page-content {
+  margin: 4rem 0 0;
+  &--after {
+    margin: 4rem auto;
+    width: 4rem;
+    background: getvar(text-ghost);
+    height: 2px;
+    border: 0;
   }
 }

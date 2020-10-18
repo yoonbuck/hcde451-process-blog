@@ -17,6 +17,31 @@ module.exports = function (eleventyConfig) {
     templateFormates: ["md", "njk", "html"],
   });
 
+  eleventyConfig.addFilter(
+    "formatDate",
+    (date) =>
+      `${
+        [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ][date.getUTCMonth()]
+      } ${date.getUTCDate()}`
+  );
+  eleventyConfig.addFilter(
+    "mins",
+    (wordCount) => `${Math.ceil((wordCount || 0) / 240)} minute read`
+  );
+
   return {
     dir: {
       input: "src",
