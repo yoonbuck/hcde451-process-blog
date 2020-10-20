@@ -39,7 +39,7 @@ module.exports = function (eleventyConfig) {
   );
   eleventyConfig.addFilter(
     "mins",
-    (wordCount) => `${Math.ceil((wordCount || 0) / 240)} minute read`
+    (wordCount) => `${Math.ceil((wordCount || 0) / 200)} minute read`
   );
 
   return {
