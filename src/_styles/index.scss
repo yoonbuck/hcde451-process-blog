@@ -48,6 +48,10 @@ $neutral-80: #232323;
       text-secondary: $neutral-60,
       text-ghost: $neutral-40,
       text-opposing: $neutral-00,
+      img-shadow: (
+        0 0 16px -4px rgba(black, 0.15),
+        1px 2px 6px -3px rgba(black, 0.2),
+      ),
     )
   );
 }
@@ -62,6 +66,10 @@ $neutral-80: #232323;
       text-secondary: $neutral-40,
       text-ghost: $neutral-60,
       text-opposing: $neutral-80,
+      img-shadow: (
+        0 0 16px -4px rgba(black, 0.4),
+        1px 2px 8px -1px rgba(black, 0.6),
+      ),
     )
   );
 }
@@ -267,5 +275,29 @@ header {
     background: getvar(text-ghost);
     height: 2px;
     border: 0;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 0 0 0.5rem 0;
+    border-bottom: 2px dotted getvar(text-ghost);
+    &:not(:first-child) {
+      margin-top: 8rem;
+    }
+  }
+
+  img {
+    max-width: calc(100% - 2rem);
+    margin: 0 auto;
+    display: block;
+    box-shadow: getvar(img-shadow);
+  }
+
+  em {
+    background-color: orange;
   }
 }
