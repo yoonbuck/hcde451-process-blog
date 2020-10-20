@@ -290,11 +290,52 @@ header {
     }
   }
 
-  img {
+  %page-image {
+    box-shadow: getvar(img-shadow);
+    border-radius: 4px;
+    display: block;
+  }
+
+  > p img,
+  video {
     max-width: calc(100% - 2rem);
     margin: 0 auto;
-    display: block;
-    box-shadow: getvar(img-shadow);
+    @extend %page-image;
+  }
+  .img-group {
+    box-sizing: border-box;
+    margin: 3rem calc(#{$page-width/2} - 50vw);
+    padding: 0 2rem;
+    @media (max-width: #{$page-width}) {
+      margin: 3rem 0;
+      padding: 0 1rem;
+    }
+
+    @include setvar(image-base-w, 16rem);
+    &--larger {
+      @include setvar(image-base-w, 24rem);
+    }
+
+    p:first-child {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        width: getvar(image-base-w);
+        max-width: 100%;
+        margin: 0.5rem;
+        flex-shrink: 1;
+        @extend %page-image;
+      }
+    }
+    p:last-child {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: getvar(text-secondary);
+      text-align: center;
+      max-width: 60vw;
+      margin: 1rem auto;
+    }
   }
 
   em {
