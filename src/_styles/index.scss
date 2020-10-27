@@ -320,6 +320,7 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: flex-end;
       img {
         width: getvar(image-base-w);
         max-width: 100%;
