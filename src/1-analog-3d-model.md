@@ -3,6 +3,7 @@ layout: process.njk
 title: analog 3D model
 stepNo: 1
 active: true
+date: 2020-10-12
 ---
 
 # design
