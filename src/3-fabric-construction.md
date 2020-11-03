@@ -142,7 +142,11 @@ Connecting the LED to the thread from the inner shell, then taping everything do
 
 </div>
 
+<video controls><source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-light.webm"/></video>
+
 # analysis
+
+
 
 I was really satisfied with my work this week—the strap turned out quite nicely and the fastening mechanism worked as expected with the Dual-Lock and conductive thread. Of course, the arbiter of success was not myself, but Roxy. How would she feel about the upgrade?
 
