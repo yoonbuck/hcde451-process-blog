@@ -146,9 +146,13 @@ Connecting the LED to the thread from the inner shell, then taping everything do
 
 I was really satisfied with my work this week—the strap turned out quite nicely and the fastening mechanism worked as expected with the Dual-Lock and conductive thread. Of course, the arbiter of success was not myself, but Roxy. How would she feel about the upgrade?
 
+<video controls><source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-on.webm"/></video>
+
 Well, it turns out the answer is, perhaps as expected, "about the same." Roxy initially refused to walk with the hat on, and did try to push it off, but her first attempt was unsuccessful. When we offered her a treat, though, she did perk up a bit, and eventually she went for it.
 
-There was one nice surprise, though. With this strap, the hat could be pushed back a bit more, so the strap is behind her ears and doesn't affect them too much. This is much more satisfactory than the original prototype's strap which completely held down her ears.
+There was one nice surprise, though. With this strap, the hat could be pushed back a bit more, so the strap is behind her ears and doesn't affect them too much if properly positioned. This is much more satisfactory than the original prototype's strap which completely held down her ears.
+
+<video controls><source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-off.webm"/></video>
 
 After finishing her treat and refusing to budge again, Roxy did finally manage to remove the hat on her own. That said, seeing her go for the treat made me more confident that it would probably be possible to train her to accept the hat, or she would just get more comfortable after time.
 
