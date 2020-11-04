@@ -6,6 +6,9 @@ active: true
 date: 2020-10-26
 ---
 
+**I've just found out the videos on this page don't play on iOS or in Safari. Please try another browser
+for now or hang tight while I re-encode the videos—thanks!**
+
 # design
 
 For this project, I decided to continue working with the same concept as the previous week. For a review of the "whirlibird" idea, you can check out my first post: [analog 3D model](/1-analog-3d-model/).
