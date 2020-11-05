@@ -6,9 +6,6 @@ active: true
 date: 2020-10-26
 ---
 
-**I've just found out the videos on this page don't play on iOS or in Safari. Please try another browser
-for now or hang tight while I re-encode the videos—thanks!**
-
 # design
 
 For this project, I decided to continue working with the same concept as the previous week. For a review of the "whirlibird" idea, you can check out my first post: [analog 3D model](/1-analog-3d-model/).
@@ -89,7 +86,7 @@ Thank goodness—it lights up!
 
 </div>
 
-My next task was to stuff the strap to make it more comfortable. I found some fake cobweb from a Halloween long forgotten which was suitably fluffy, and used a chopstick to stuff this down the length of the strap. Once it was full, I sewed off one end so the fluff couldn't come out.
+My next task was to stuff the strap to make it more comfortable. I found some fake cobweb from a Halloween long forgotten which was suitably fluffy, and used a chopstick to stuff this down the length of the strap. Once it was full, I sewed off the end so the fluff couldn't come out.
 
 <div class="img-group">
 
@@ -145,7 +142,10 @@ Connecting the LED to the thread from the inner shell, then taping everything do
 
 </div>
 
-<video controls><source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-light.webm"/></video>
+<video controls>
+  <source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-light.webm" type="video/webm"/>
+  <source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-light.mp4" type="video/mp4"/>
+</video>
 
 # analysis
 
@@ -153,13 +153,19 @@ Connecting the LED to the thread from the inner shell, then taping everything do
 
 I was really satisfied with my work this week—the strap turned out quite nicely and the fastening mechanism worked as expected with the Dual-Lock and conductive thread. Of course, the arbiter of success was not myself, but Roxy. How would she feel about the upgrade?
 
-<video controls><source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-on.webm"/></video>
+<video controls>
+  <source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-on.webm" type="video/webm"/>
+  <source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-on.mp4" type="video/mp4"/>
+</video>
 
 Well, it turns out the answer is, perhaps as expected, "about the same." Roxy initially refused to walk with the hat on, and did try to push it off, but her first attempt was unsuccessful. When we offered her a treat, though, she did perk up a bit, and eventually she went for it.
 
 There was one nice surprise, though. With this strap, the hat could be pushed back a bit more, so the strap is behind her ears and doesn't affect them too much if properly positioned. This is much more satisfactory than the original prototype's strap which completely held down her ears.
 
-<video controls><source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-off.webm"/></video>
+<video controls>
+  <source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-off.webm" type="video/webm"/>
+  <source src="https://cdn.yoonbuck.com/hcde451-www/3-fabric-construction/hat-off.mp4" type="video/mp4"/>
+</video>
 
 After finishing her treat and refusing to budge again, Roxy did finally manage to remove the hat on her own. That said, seeing her go for the treat made me more confident that it would probably be possible to train her to accept the hat, or she would just get more comfortable after time.
 
