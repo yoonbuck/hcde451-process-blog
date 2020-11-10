@@ -301,6 +301,11 @@ header {
     display: block;
   }
 
+  .media {
+    @extend %page-image;
+    overflow: hidden;
+  }
+
   > p img,
   video {
     max-width: calc(100% - 2rem);
@@ -341,6 +346,34 @@ header {
       text-align: center;
       max-width: 60vw;
       margin: 1rem auto;
+    }
+  }
+
+  %hrblob {
+    width: 0.25rem;
+    height: 0.25rem;
+    background: getvar(text-ghost);
+    border-radius: 100%;
+    border: 0;
+  }
+
+  hr {
+    margin: 2rem auto;
+    position: relative;
+    @extend %hrblob;
+    overflow: visible;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      @extend %hrblob;
+    }
+    &::before {
+      transform: translateX(-400%);
+    }
+    &::after {
+      transform: translateX(400%);
     }
   }
 
