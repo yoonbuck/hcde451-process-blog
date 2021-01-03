@@ -1,7 +1,6 @@
 ---
 layout: global.njk
 tags: process
-date: 2020-10-12
 ---
 
 <div id="container">
@@ -12,6 +11,16 @@ date: 2020-10-12
       <p class="process-meta">
         {{ page.date | formatDate }} · {{ content | striptags | wordcount | mins }}
       </p>
+      {%- if artifacts -%}
+      <div class="process-artifacts">
+        <strong>artifacts:</strong>
+        <ul>
+          {%- for artifact in artifacts -%}
+            <li><a href="{{artifact[1]}}" target="_blank">{{artifact[0]}}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      {%- endif -%}
     </div>
   </header>
 

@@ -4,6 +4,8 @@ title: digital 3D model
 stepNo: 2
 active: true
 date: 2020-10-19
+artifacts:
+  - ["interactive 3D model", "https://cad.onshape.com/documents/72d3aba1c58fe6d339a53ae3/w/dccb50788bfd08ee5e5b12a2/e/fe4f9dd29169963ad08164c1"]
 ---
 
 # design
@@ -28,7 +30,7 @@ The sketch of the hat and motor, then the parts after revolving
 
 </div>
 
-The propellor that should go on top of the hat proved much more difficult. For simplicity, I decided not to try to model the bone shape that I created last week—though I haven't forgotten about it! The biggest snag that I hit was that I wanted the blades of the fan to be flat, but on my first attempt, they didn't sit flat. Normally, fan blades should be at an angle, but in my case, the blades aren't meant to generate lift or move air, so they should be flat. 
+The propellor that should go on top of the hat proved much more difficult. For simplicity, I decided not to try to model the bone shape that I created last week—though I haven't forgotten about it! The biggest snag that I hit was that I wanted the blades of the fan to be flat, but on my first attempt, they didn't sit flat. Normally, fan blades should be at an angle, but in my case, the blades aren't meant to generate lift or move air, so they should be flat.
 
 <div class="img-group">
 
